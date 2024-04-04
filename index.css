@@ -13,14 +13,14 @@
 	background-color: whitesmoke;
 	margin: 0 auto;
 }
-/* This is the entirety of our page, and so this styling will persist across the whole page. */
+
 .header_block {
 	margin: 0;
 	padding: 0;
 	width: 100;
 	height: 100vh;
 	position: relative;
-	background-color: #FFB1A4;
+	background-color: #3a5a40;
 	display: block;
 	align-items: center; 
 	flex-direction: row;
@@ -29,7 +29,7 @@
 
 /* pre is where we stored all of our paragraphs, teh font  */
 .pre_code_container {
-	font-family: "Nanum Pen Script"; /* Coding Font Style */
+	font-family: "Reenie Beanie"; /* Coding Font Style */
 	display: flex; /* Sets whether an element is treated as a block or inline element and the layout used for its children */
 	flex-wrap: wrap; /* Tells our elements to wrap around if they run out of space */
 	flex-direction: row; /* Specifies how items are placed in the flex container x/y-axis */
@@ -46,7 +46,7 @@
 	justify-content: center; /* Centers our element horizontally*/
 	word-break: normal; /* Specifies line break opportunities */
 	white-space: normal; /* Shorthand property for the 'white-space-collapsing' and 'text-wrap' properties. */
-    font-size: 20pt;
+    font-size: 30pt;
 }
 
 .header_container {
@@ -65,7 +65,9 @@
 	padding: 1em 0.5em; /* Adds space to the left and right of our element */
 	max-width: 700px; /* Sets the maximum width among all elements inside of this container */
 	margin: 0 auto; /* Guarantees that the left and right margins will be set to the same size, top and bottom are set to 0 */
-    font-family: "Nanum Pen Script";
+    font-family: "Reenie Beanie";
+	font-size: 30px;
+	padding-bottom: 0em;
 }
 
 /* Our navigation links are centered and made to look pretty */
@@ -92,7 +94,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	fill: #023F92;
+	fill: #a3b18a;
 	width: 50vmax;
 	z-index: -1;
 	animation: move 10s ease-in-out infinite;
