@@ -5,11 +5,26 @@
 /* Body Font */
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Dongle:wght@300;400;700&display=swap");
 /* even font */
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Reenie+Beanie&display=swap');
-/* This is the entirety of our page, and so this styling will persist across the whole page. */
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Reenie+Beanie&display=swap");
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:700');
+
 .container {
-	margin: 0 auto; /* Guarantees that the left and right margins will be set to the same size, top and bottom are set to 0 */
-	font-family: "Nanum Pen Script"; /* Makes our current font name change to Chakra Petch wherever possible in our body */
+	background-color: whitesmoke;
+	margin: 0 auto;
+}
+/* This is the entirety of our page, and so this styling will persist across the whole page. */
+.header_block {
+	margin: 0;
+	padding: 0;
+	width: 100;
+	height: 100vh;
+	position: relative;
+	background-color: #FFB1A4;
+	display: block;
+	align-items: center; 
+	flex-direction: row;
+	overflow: hidden;
 }
 
 /* pre is where we stored all of our paragraphs, teh font  */
@@ -17,26 +32,32 @@
 	font-family: "Nanum Pen Script"; /* Coding Font Style */
 	display: flex; /* Sets whether an element is treated as a block or inline element and the layout used for its children */
 	flex-wrap: wrap; /* Tells our elements to wrap around if they run out of space */
-	flex-direction: column; /* Specifies how items are placed in the flex container x/y-axis */
+	flex-direction: row; /* Specifies how items are placed in the flex container x/y-axis */
 }
 
 /* Every single paragraph in our terminal or pre element */
 .code_container {
-	margin: 0.25em; /* Places spacing on the outside all around our element */
-	display: flex; /* Sets whether an element is treated as a block or inline element and the layout used for its children */
+	padding: 1em 0.5em; /* Adds space to the left and right of our element */
+	max-width: 700px; /* Sets the maximum width among all elements inside of this container */
+	margin: 0 auto;
+    display: flex; /* Sets whether an element is treated as a block or inline element and the layout used for its children */
 	flex-wrap: wrap; /* Tells our elements to wrap around if they run out of space */
-	flex-direction: column; /* Specifies how items are placed in the flex container x/y-axis */
+	flex-direction: row; /* Specifies how items are placed in the flex container x/y-axis */
 	justify-content: center; /* Centers our element horizontally*/
 	word-break: normal; /* Specifies line break opportunities */
 	white-space: normal; /* Shorthand property for the 'white-space-collapsing' and 'text-wrap' properties. */
+    font-size: 20pt;
 }
 
-/* Portfolio */
 .header_container {
-	display: flex; /* Sets whether an element is treated as a block or inline element and the layout used for its children */
-	flex-direction: row; /* Specifies how items are placed in the flex container x/y-axis */
-	justify-content: center; /* Centers our element horizontally*/
-	font-family: "Reenie Beanie"; /* Makes our current font name change to Comfortaa */
+	color: white;
+  	font-size: 10vmin;
+  	line-height: 1;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	padding-left: 40px;
 }
 
 /* Houses the meat of our webpage and limits the size of the content */
@@ -44,14 +65,16 @@
 	padding: 1em 0.5em; /* Adds space to the left and right of our element */
 	max-width: 700px; /* Sets the maximum width among all elements inside of this container */
 	margin: 0 auto; /* Guarantees that the left and right margins will be set to the same size, top and bottom are set to 0 */
+    font-family: "Nanum Pen Script";
 }
 
 /* Our navigation links are centered and made to look pretty */
 .nav_container {
 	display: flex; /* Sets whether an element is treated as a block or inline element and the layout used for its children */
 	flex-direction: row; /* Specifies how items are placed in the flex container x/y-axis */
-	justify-content: center; /* Centers our element horizontally*/
-	padding-top: 0.5em; /* Adds space to the top of our element */
+	justify-content: left; /* Centers our element horizontally*/
+	padding-left: 80px;
+	padding-top: 0.15em; /* Adds space to the top of our element */
 	padding-bottom: 0.5em; /* Adds space to the bottom of our element */
 }
 
@@ -60,19 +83,28 @@
 	text-decoration: none; /* Removes any underlines or overlines from our text */
 	margin-left: 0.5em; /* Places spacing on the outside on the left of the element */
 	margin-right: 0.5em; /* Places spacing on the outside on the right of the element */
-	color: black; /* Makes our text color black */
+	color: white; /* Makes our text color black */
 	font-family: "Reenie Beanie"; /* Makes our current font name change to Comfortaa */
+    font-size: 40pt;
 }
 
-/* A small division used to make the green line at the bottom of our pre container */
-.terminal {
-	padding-bottom: 0.3rem; /* Adds space to the bottom of our element */
-	padding-top: 0.3rem; /* Adds space to the top of our element */
-	border-bottom: 1px solid green; /* */
-}
-/* This does some fancy stuff to place the > above the green line at the bottom */
-#input:before {
-	content: ">"; /* Content is like text that could not exist in the HTML */
-	padding-left: 1rem; /* Adds space to the left of our element */
-	color: green; /* Makes the > a green color */
-}
+.blob {
+	position: absolute;
+	top: 0;
+	left: 0;
+	fill: #023F92;
+	width: 50vmax;
+	z-index: -1;
+	animation: move 10s ease-in-out infinite;
+	transform-origin: 50% 50%;
+  }
+  
+  @keyframes move {
+	0%   { transform: scale(1)   translate(10px, -30px); }
+	38%  { transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg); }
+	40%  { transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg); }
+	78%  { transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg); }
+	80%  { transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg); }
+	100% { transform: scale(1)   translate(10px, -30px); }
+  }
+  
