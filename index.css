@@ -4,20 +4,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap");
 /* Body Font */
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Dongle:wght@300;400;700&display=swap");
-
+/* even font */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Reenie+Beanie&display=swap');
 /* This is the entirety of our page, and so this styling will persist across the whole page. */
 .container {
 	margin: 0 auto; /* Guarantees that the left and right margins will be set to the same size, top and bottom are set to 0 */
-	font-family: "Chakra Petch"; /* Makes our current font name change to Chakra Petch wherever possible in our body */
+	font-family: "Nanum Pen Script"; /* Makes our current font name change to Chakra Petch wherever possible in our body */
 }
 
 /* pre is where we stored all of our paragraphs, teh font  */
 .pre_code_container {
-	font-family: "Inconsolata"; /* Coding Font Style */
-	border: solid black 0.5em; /* Creates a border around our container that is solid, black and has a responsive thickness */
-	border-radius: 0.3em; /* Creates a round edge around our container */
-	background-color: #121212; /* Changes the background color of our container */
-	color: white; /* Changes our text color to white */
+	font-family: "Nanum Pen Script"; /* Coding Font Style */
 	display: flex; /* Sets whether an element is treated as a block or inline element and the layout used for its children */
 	flex-wrap: wrap; /* Tells our elements to wrap around if they run out of space */
 	flex-direction: column; /* Specifies how items are placed in the flex container x/y-axis */
@@ -39,7 +36,7 @@
 	display: flex; /* Sets whether an element is treated as a block or inline element and the layout used for its children */
 	flex-direction: row; /* Specifies how items are placed in the flex container x/y-axis */
 	justify-content: center; /* Centers our element horizontally*/
-	font-family: "Monaco"; /* Makes our current font name change to Comfortaa */
+	font-family: "Reenie Beanie"; /* Makes our current font name change to Comfortaa */
 }
 
 /* Houses the meat of our webpage and limits the size of the content */
@@ -64,7 +61,7 @@
 	margin-left: 0.5em; /* Places spacing on the outside on the left of the element */
 	margin-right: 0.5em; /* Places spacing on the outside on the right of the element */
 	color: black; /* Makes our text color black */
-	font-family: "Comfortaa"; /* Makes our current font name change to Comfortaa */
+	font-family: "Reenie Beanie"; /* Makes our current font name change to Comfortaa */
 }
 
 /* A small division used to make the green line at the bottom of our pre container */
