@@ -1,5 +1,5 @@
-# Hi! I'm Sherly!
+# Hi! This is my webpage!
 
-I am currently a first-year MSCS student at UCLA. I have my BS in CS and Math from CSU Stanislaus.
+It is currently under construction (like, super under construction)
 
-Check out my website [here](https://newsherlytemple.github.io/webpage/)!
+If you still want to check it out, please go [here](https://newsherlytemple.github.io/webpage/)!
